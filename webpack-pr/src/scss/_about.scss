@@ -1,0 +1,247 @@
+@import 'mixins';
+.about{
+  height: 798px;
+  background-color: #fff;
+  border: 1px solid black;
+    h1{
+      position: relative;
+      z-index: 2;
+      @include font-sl(72px);
+      color: rgb(1,25,121);
+      font-weight: bold;
+      text-align: center;
+      padding-bottom: 80px;
+      margin-top: 0;
+      margin-bottom: 0;
+      z-index: 2;
+    }
+    .ring5{
+      @extend %ring-rules;
+      left: 77.77%;
+      top: 1589px;
+    }
+    .ring22{
+      @extend %ring-rules;
+      left: 57.43%;
+      top: 2330px;
+    }
+
+  h2{
+    @include font-sl(24px);
+    font-weight: bold;
+    color: $mydarkblue;
+  }
+  p{
+    @include font-sl(16px);
+    color: #6e6e6e;
+    margin: 8px 0 0 0;
+  }
+  .rect2{
+    @extend %rect-rules;
+    left: 50%;
+    width: 49%;
+    height: 70px;
+  }
+  .rect3{
+    @extend %rect-rules;
+    left: 13.8%;
+    top:1740px;
+    width: 4.861%;
+    height: 345px;
+  }
+  .rect4{
+    @extend %rect-rules;
+    left: 66.5%;
+    top:1954px;
+    width: 4.861%;
+    height: 345px;
+  }
+  .pict1{
+    @extend %ring-rules;
+    margin: 120px 0 0 42.625%;
+    padding:0;
+  }
+  .pict2{
+    position: absolute;
+    z-index: 3;
+    margin: 260px 0 0 35.44%;
+    padding:0;
+    display: block;
+  }
+  .pict3{
+    position: absolute;
+    z-index: 4;
+    margin: 470px 0 0 41.625%;
+    padding:0;
+    display: block;
+  }
+  .string1{
+    display: inline-block;
+    width: 100%;
+    .a_block1{
+      display: block;
+      width: 50%;
+      float: left;
+      .info1{
+        img{
+          position: relative;
+          z-index: 2;
+          float: left;
+          padding-left: 20.76%;
+        }
+        h2{
+          float: left;
+          width: 42%;
+          padding-left:1.38%;
+          margin:0;
+        }
+      }
+      p{
+        position: relative;
+        z-index: 2;
+        padding-left: 20.76%;
+        float: left;
+        display:block;
+      }
+    }
+
+    .a_block2{
+      float: left;
+      width: 50%;
+      h2{
+          padding-left: 15.972%;
+          margin:0;
+      }
+      p{
+          padding-left: 15.972%;
+          display:block;
+      }
+    }
+  }
+  .string2{
+   display: block;
+    width: 100%;
+    margin-top: 100px;
+    .a_block3{
+      width: 50%;
+      float: left;
+      .info2{
+        display: block;
+        h1{
+          position: relative;
+          z-index: 2;
+          float: left;
+          padding-left: 32.05%;
+        }
+        h2{
+          float: left;
+          width: 25.694%;
+          margin: 1.7% 0 0 1.38%;
+        }
+      }
+      .info2-text{
+        display: block;
+        float: right;
+        margin-right: 29%;
+        p{
+          padding-top: 8px;
+          margin-top: 0;
+        }
+      }
+    }
+    .a_block4{
+      float: left;
+      width: 50%;
+      .info3{
+       display: block;
+        h1{
+          padding-left: 20.4164%;
+          float: left;
+          span {
+            font-size: 40px;
+            vertical-align: top;
+          }
+        }
+        h2{
+          float: left;
+          margin: 10px 19% 0 2.77%;
+        }
+      }
+      .info3-text{
+        float: right;
+        padding-top: 8px;
+        padding-right: 21.5%;
+        p{
+          width: 100%;
+          margin:0;
+        }
+      }
+    }
+  }
+  .string3{
+    display: block;
+    .a_block5{
+      margin-top: 50px;
+      float: left;
+      width: 55%;
+      .info4{
+          display: block;
+          padding-left: 20.76%;
+          h1{
+            float: left;
+            text-align: left;
+            margin: 0;
+            padding:0;
+          }
+          h2{
+            float: left;
+            margin: 14px 0 0 1.38%;
+            text-align: left;
+            width: 30%;
+          }
+        }
+        .info4-text{
+            display: block;
+            padding-left: 39%;
+            float: left;
+          p{
+            margin: 0;
+            padding:0 0 5px 0;
+            line-height: 1.5;
+            width: 60%;
+          }
+        }
+    }
+      .a_block6{
+        float: left;
+        width: 45%;
+        margin-top: 50px;
+        .info5{
+         display: block;
+          h1{
+            padding-left: 9.63194%;
+            float: left;
+            width: 37%;
+            margin:0;
+            span {
+              font-size: 40px;
+              vertical-align: top;
+            }
+          }
+          h2{
+            float: left;
+            margin: 10px 40px 0 0;
+          }
+        }
+        .info5-text{
+          float: left;
+          padding-top: 8px;
+          p{
+            width: 100%;
+            margin:0;
+            padding: 0 0 8px 0;
+          }
+        }
+    }
+  }
+}

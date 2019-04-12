@@ -1,0 +1,121 @@
+@import 'mixins';
+header{
+  height: 157px;
+  width: 100%;
+  background-color: #f4f4f4;
+
+  .logotip{
+    background: url("../images/logo.png") no-repeat;
+    position:absolute;
+    z-index: 2;
+    left: 10.65%;
+    top: 40px;
+  }
+
+  .header-top{
+    .cart-im{
+      background: url("../images/login.png") no-repeat;
+      float: left;
+      margin-right: 30px;
+      padding-left: 4.86%;
+      padding-bottom: 30px;
+    }
+    .login-im{
+      background: url("../images/login.png") no-repeat;
+      float: left;
+      padding-left: 4.86%;
+      padding-top: 30px;
+    }
+    height: 88px;
+    width: 100%;
+    //img{
+    //  float: left;
+  //    padding-left: 4.86%;
+  //    padding-top: 30px;
+  //  }
+    p{
+        float:left;
+        @include font-sl(14px);
+        color: #6e6e6e;
+        padding-left: 1.11%;
+        margin: 0;
+        padding-top: 35px;
+    }
+    #search{
+      float: left;
+      margin-top: 30px;
+      height: 28px;
+      width: 22.22%;
+      border-radius: 5px;
+      border: none;
+      background-color: #fff;
+      margin-left: 49%;
+      ::placeholder{
+        color:#6e6e6e;
+      }
+    }
+  }
+
+  .header-bottom{
+    height: 69px;
+    width: 100%;
+    border: 1px solid #ccc;
+    img{
+      padding-top: 22px;
+      float: left;
+      @include font-sl(12px);
+      color: #6e6e6e;
+    }
+    p{
+      padding-top: 25px;
+      float: left;
+      @include font-sl(12px);
+      color: #6e6e6e;
+      margin-top: 0;
+      padding-left: 0.694%;
+    }
+    .facebook{
+      img{
+          margin-left: 10.55%;
+      }
+    }
+    .instagram{
+        img{
+         margin-left: 1.38%;
+        }
+      }
+
+    .phone-number{
+        img{
+          margin-left: 3.47%;
+        }
+        ul{
+          float: left;
+          margin:0 0 0 1.7361%;
+          padding:20px 0 0 0;
+            li{
+              display: block;
+              @include font-sl(14px);
+              color: $mydarkblue;
+              span{
+                color: #9f9f9f;
+              }
+            }
+        }
+    }
+   nav{
+      float: left;
+      padding: 25px 0 0 3.194%;
+      width: 49.305%;
+      a{
+        display: inline-block;
+        @include font-sl(14px);
+        color: #000;
+        text-decoration: none;
+        border-left: 1px solid #ccc;
+        padding-left: 1.7%;
+        padding-right: 1.7%;
+    }
+  }
+}
+}

@@ -1,0 +1,60 @@
+@import 'mixins';
+.sale{
+  height: 763px;
+  background-color: #fff;
+  .sale-left{
+    float: left;
+    width: 50%;
+    .sale-title{
+      display: block;
+      padding-top: 60px;
+      padding-left: 27.76%;
+      h1{
+        @include font-sl(36px);
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+        padding-bottom: 6px;
+        color: $mydarkblue;
+      }
+    }
+    ul{
+        padding-left: 32.638%;
+        padding-right: 0;
+        margin-right: 0;
+        display: block;
+        li{
+            @include font-sl(18px);
+            color:$mydarkblue;
+            list-style-image: url('../images/plus.png');
+            padding-bottom: 15px;
+        }
+    }
+  }
+  #kollage1{
+    position: absolute;
+    z-index: 2;
+    float: left;
+    padding-left:14.319%;
+  }
+  #ring1{
+    position: absolute;
+    top:1335px;
+    left:10.416%;
+    z-index: 2;
+  }
+  #rect1{
+    position: absolute;
+    top:1200px;
+    left:15%;
+    z-index: 1;
+  }
+  .hits{
+    float:right;
+    width: 39.58%;
+    height: 586px;
+    background-color: #f4f4f4;
+    margin-right: 5%;
+    margin-top: 60px;
+  }
+}

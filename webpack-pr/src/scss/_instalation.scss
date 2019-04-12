@@ -1,0 +1,70 @@
+@import 'mixins';
+.instalation{
+  height: 683px;
+  background-color: #f4f4f4;
+  border-top: solid 1px #ccc;
+  .rect8{
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 651px;
+    width: 43.05%;
+    height: 70px;
+    background: repeating-linear-gradient(135deg, #fff, #fff 5px, #e2e2e2 3px, #e2e2e2 7px);
+  }
+  .inst-left{
+    float: left;
+    width: 50%;
+  .inst-title{
+    padding-top: 60px;
+    padding-left: 27.76%;
+    h1{
+      @include font-sl(36px);
+      font-weight: bold;
+      text-align: left;
+      margin: 0;
+      color: $mydarkblue;
+      padding-bottom: 6px;
+      }
+    }
+    ul{
+        width: 27.76%;
+        padding-left: 32.638%;
+        padding-right: 0;
+        margin-right: 0;
+        li{
+            @include font-sl(18px);
+            color:$mydarkblue;
+            list-style-image: url('../images/plus.png');
+            padding-bottom: 15px;
+        }
+    }
+  }
+    .man{
+      background: url("../images/man2.png" no-repeat);
+      width: auto;
+      height: auto;
+      z-index: 3;
+      position: absolute;
+      left:24.2638%;
+      top:269px;
+    }
+    #ring3{
+      z-index: 2;
+      position: absolute;
+      top:532px;
+      left:18.056%;
+    }
+    .configer{
+      float:right;
+      width: 39.58%;
+      height: 586px;
+      background-color: $mydarkblue;
+      margin-right: 5%;
+      margin-top: 60px;
+
+      h1{
+        margin: 0;
+      }
+    }
+}

@@ -1,0 +1,15 @@
+@mixin font-sl($size){
+  font: $size Arial, Helvetica;
+}
+%ring-rules{
+  position: absolute;
+  z-index: 2;
+  display: block;
+}
+%rect-rules{
+  position: absolute;
+  z-index: 1;
+  display: block;
+  background: repeating-linear-gradient(135deg, #fff, #fff 5px, #e2e2e2 3px, #e2e2e2 7px);
+}
+$mydarkblue: #011979;

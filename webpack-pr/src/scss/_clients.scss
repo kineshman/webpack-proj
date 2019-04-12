@@ -1,0 +1,109 @@
+@import 'mixins';
+%clients-button{
+  height:49px;
+  width: 49px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+.clients{
+    border: 1px solid #000;
+    height: 653px;
+    width: 100%;
+    background-color: #fff;
+    .rect5{
+      @extend %rect-rules;
+      width: 50%;
+      height: 70px;
+    }
+    .ring6{
+      @extend %ring-rules;
+      left: 20.6527%;
+      top: 2579px;
+    }
+    .rect6{
+      @extend %rect-rules;
+      left: 50%;
+      top: 2545px;
+      width: 49%;
+      height: 70px;
+    }
+  .clients-title{
+    display: block;
+    padding: 15px 0 45px 0;
+    h1{
+      position: relative;
+      z-index: 2;
+      @include font-sl(72px);
+      color: rgb(1,25,121);
+      font-weight: bold;
+      text-align: center;
+      margin: 0 0;
+    }
+  }
+  .clients-text{
+      p{
+        @include font-sl(16px);
+        color: #6e6e6e;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 7px;
+        margin: 0;
+      }
+  }
+  .ten{
+    float: left;
+    padding:60px 0 0 3.472%;
+  }
+  .voshod{
+    float: left;
+    padding:60px 0 0 8.68%;
+  }
+  .hlebozavod{
+    float: left;
+    padding:60px 0 0 7.9861%;
+  }
+  .glamur{
+    float: left;
+    padding:60px 0 0 7.9861%;
+  }
+  .udk{
+    float: left;
+    padding: 60px 0 0 7.9861%;
+    img{
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .but-left{
+    float:left;
+    margin:85px 0 0 9.375%;
+    button{
+      background: url('../images/but-left.png') no-repeat;
+      @extend %clients-button;
+    }
+  }
+  .but-right{
+    float:left;
+    margin:85px 0 0 5%;
+    button{
+      background: url('../images/but-right.png') no-repeat;
+      @extend %clients-button;
+    }
+  }
+  .but4{
+    display: inline-block;
+    float: left;
+    margin-left:  41.66%;
+    button{
+      margin-top: 30px;
+      background-color: $mydarkblue;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      @include font-sl(18px);
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}

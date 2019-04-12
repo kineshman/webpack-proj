@@ -1,0 +1,57 @@
+@import 'mixins';
+%a-p-rules{
+  color: #fff;
+  margin: 0;
+  padding-bottom: 14px;
+}
+%block-rules{
+  float: left;
+  padding-left: 9.375%;
+  a{
+  display: block;
+  :hover{
+    color: #fff;
+    }
+  }
+}
+footer{
+  height: 400px;
+  width: 100%;
+  background-color: $mydarkblue;
+  a{
+    @include font-sl(14px);
+    @extend %a-p-rules;
+    display: block;
+  }
+  h2{
+    color: #fff;
+    font-weight: bold !important;
+    text-align: left;
+    @include font-sl(16px);
+    padding-bottom: 28px;
+    margin: 0;
+    padding-top: 40px;
+  }
+  .block1{
+    float: left;
+    width: auto;
+    padding: 40px 0 0 12.27%;
+      .logo-footer{
+        padding-bottom: 30px;
+      }
+      p{
+        @include font-sl(14px);
+        @extend %a-p-rules;
+        text-align: left !important;
+      }
+    }
+    .block2{
+      @extend %block-rules;
+    }
+    .block3{
+      @extend %block-rules;
+    }
+    .block4{
+      @extend %block-rules;
+    }
+  }

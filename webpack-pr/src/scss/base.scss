@@ -1,0 +1,13 @@
+@import 'header';
+@import 'instalation';
+@import 'sale';
+@import 'about';
+@import 'clients';
+@import 'contacts';
+@import 'footer';
+
+$bg-color: pink;
+
+body {
+  background: $bg-color;
+}
